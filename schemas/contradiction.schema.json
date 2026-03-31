@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "contradiction_id",
+    "severity",
+    "source_a",
+    "source_b",
+    "issue_type",
+    "explanation",
+    "questions_to_resolve"
+  ],
+  "properties": {
+    "contradiction_id": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "source_a": {
+      "type": "string"
+    },
+    "source_b": {
+      "type": "string"
+    },
+    "issue_type": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "questions_to_resolve": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

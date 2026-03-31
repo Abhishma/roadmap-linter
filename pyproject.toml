@@ -1,0 +1,17 @@
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadmap-linter"
+version = "0.1.0"
+description = "AI-assisted contradiction and ambiguity detection for PM documents"
+requires-python = ">=3.10"
+dependencies = ["streamlit>=1.30.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

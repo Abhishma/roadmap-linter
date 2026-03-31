@@ -1,0 +1,32 @@
+{
+  "status": "lint_ready",
+  "sources_reviewed": [
+    "roadmap",
+    "prd",
+    "okr"
+  ],
+  "contradictions": [
+    {
+      "contradiction_id": "C-001",
+      "severity": "high",
+      "source_a": "roadmap",
+      "source_b": "prd",
+      "issue_type": "strategy_scope_conflict",
+      "explanation": "Roadmap says minimize checkout changes during payment migration, while PRD scopes a broad checkout redesign and full rollout.",
+      "questions_to_resolve": [
+        "Is full checkout redesign compatible with migration risk posture this quarter?",
+        "What should be removed from scope if migration risk remains high?"
+      ]
+    }
+  ],
+  "ambiguity_flags": [
+    "PRD uses vague success criteria: 'intuitive and seamless checkout'"
+  ],
+  "missing_assumptions": [
+    "No explicit owner for payment migration dependency risk"
+  ],
+  "questions_to_resolve": [
+    "What launch guardrails are required before 100% rollout?",
+    "What checkout areas are intentionally excluded due to migration risk?"
+  ]
+}
